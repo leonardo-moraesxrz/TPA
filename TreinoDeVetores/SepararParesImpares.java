@@ -40,4 +40,3 @@ public class SepararParesImpares {
         ler.close();
     }
 }
-

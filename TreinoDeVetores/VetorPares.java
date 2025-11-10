@@ -1,9 +1,19 @@
+import java.util.Scanner;
+
 public class VetorPares {
     public static void main(String[] args) {
-        int[] A = { 3, 7, 4, 6, 2, 9, 5, 8, 1, 10 };
+        Scanner input = new Scanner(System.in);
+        int[] A = new int[10];
 
         for (int i = 0; i < A.length; i++) {
+            System.out.print("Digite o valor do elemento A[" + i + "]: ");
+            A[i] = input.nextInt();
+        }
+
+        System.out.println();
+        for (int i = 0; i < A.length; i++) {
             System.out.println("Elemento A[" + i + "] = " + A[i]);
+            System.out.print("Pares de 0 até " + A[i] + ": ");
 
             for (int j = 0; j <= A[i]; j++) {
                 if (j % 2 == 0) {
@@ -13,5 +23,7 @@ public class VetorPares {
 
             System.out.println("\n");
         }
+
+        input.close();
     }
 }

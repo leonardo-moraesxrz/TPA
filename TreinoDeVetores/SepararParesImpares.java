@@ -10,7 +10,7 @@ public class SepararParesImpares {
         int[] B = new int[20];
         int contPar = 0;
 
-        // Leitura do vetor A
+        
         System.out.println("Digite 20 números inteiros:");
         for (int i = 0; i < 20; i++) {
             System.out.print("A[" + i + "]: ");
@@ -31,12 +31,11 @@ public class SepararParesImpares {
             }
         }
 
-        // Exibição do vetor B
+        
         System.out.println("\nVetor B (pares primeiro, ímpares depois):");
         for (int i = 0; i < 20; i++) {
             System.out.print(B[i] + " ");
         }
 
-        ler.close();
     }
 }

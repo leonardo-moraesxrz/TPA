@@ -2,10 +2,9 @@ import java.util.Scanner;
 
 public class VerificaPrimos {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner ler = new Scanner(System.in);
         int[] A = new int[10];
 
-        // Leitura dos números
         System.out.println("Digite 10 números inteiros:");
         for (int i = 0; i < 10; i++) {
             System.out.print("A[" + i + "]: ");
@@ -14,7 +13,6 @@ public class VerificaPrimos {
 
         System.out.println("\n--- Verificação de números primos ---");
 
-        // Verifica se cada número é primo
         for (int i = 0; i < 10; i++) {
             int num = A[i];
             int divisores = 0;
@@ -32,6 +30,7 @@ public class VerificaPrimos {
             }
         }
 
-        sc.close();
+        ler.close();
     }
 }
+

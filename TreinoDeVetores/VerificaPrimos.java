@@ -8,7 +8,7 @@ public class VerificaPrimos {
         System.out.println("Digite 10 números inteiros:");
         for (int i = 0; i < 10; i++) {
             System.out.print("A[" + i + "]: ");
-            A[i] = sc.nextInt();
+            A[i] = ler.nextInt();
         }
 
         System.out.println("\n--- Verificação de números primos ---");
@@ -33,4 +33,5 @@ public class VerificaPrimos {
         ler.close();
     }
 }
+
 
